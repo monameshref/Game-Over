@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = "dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game Over</title>
+        <link rel="shortcut icon" href="images/ftg-img.jpg" type="image/x-icon">
+            <!-- fontawesome-->
+            <link rel="stylesheet" href="css/all.min.css">
+    
+            <!-- bootstrap css-->
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+            <!-- style main css -->
+            <link rel="stylesheet" href="css/main.css">
+    </head>
+<body>
+
+    <span class="position-fixed bottom-0 end-0 py-3 px-4 fs-4" role="button">
+        <i class="fa-regular fa-sun mode"></i>
+    </span>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="row g-0 my-3 shadow">
+                    <div class="col-lg-5">
+                        <div class="image-register"></div>
+                    </div>
+                    <div class="col-lg-7 p-3 rounded ">
+                        <div class="image-logo d-flex justify-content-center">
+                            <img src="./images/logo-sm.png" alt="">
+                        </div>
+                        <h1 class="text-center py-2">Register to Game Over</h1>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="First Name" class="form-control mt-3">
+                                    <ul class="alert alert-danger mt-2 mb-0 p-0 ps-2 invalid-feedback small">
+                                        <li class="text-danger">First Name Is Required</li>
+                                        <li class="text-danger">Minmum Length 2 and Maxmum 20</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Last Name" class="form-control mt-3">
+                                    <ul class="alert alert-danger mt-2 mb-0 p-0 ps-2 invalid-feedback small">
+                                        <li class="text-danger">Last Name Is Required</li>
+                                        <li class="text-danger">Minmum Length 2 and Maxmum 20</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="email" placeholder="Email Address" class="form-control mt-3">
+                                <ul class="alert alert-danger mb-0 p-0 ps-2 invalid-feedback small">
+                                    <li class="text-danger">Email Is Required</li>
+                                    <li class="text-danger">InValid Email Formate</li>
+                                </ul>
+
+                            <div class="input-box position-relative">
+                                <input type="password" placeholder="Password" class="form-control mt-3">
+                                <span class="pass">
+                                    <i class="fa-solid fa-lock passIcon "></i>
+                                </span>
+
+                                <ul class="alert alert-danger mb-0 p-0 ps-2 invalid-feedback small">
+                                    <li class="text-danger">Password Is Required</li>
+                                    <li class="text-danger">Minimum eight characters, at least one letter and one number</li>
+                                </ul>
+                            </div>
+
+                            <input type="number" placeholder="Enter Age" class="form-control mt-3">
+                                <ul class="alert alert-danger mb-3 p-0 ps-2 invalid-feedback small">
+                                    <li class="text-danger">Age Is Required</li>
+                                    <li class="text-danger">Minimum 10 Maxmum 80</li>
+                                </ul>
+                            <button type="submit" class="w-100 btn main-btn register my-3">
+                                Register
+                                <i class="fa-solid fa-spinner fa-spin d-none spin-icon"></i>
+                            </button>
+                        </form>
+                        <p class="message pt-2 text-center"></p>
+                        <p class="text-center pt-3">Already a member?
+                            <a href="index.html" class="text-decoration-none"> LogIn <i class="fa-solid fa-chevron-right fa-beat"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="js/register.js"></script>
+
+</body>
+</html>

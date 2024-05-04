@@ -1,0 +1,169 @@
+/*! Dark & Light Mode */
+[data-theme="dark"] {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --text-color: #fff;
+  --btn-main-color: #272729;
+  --background-form: #3d4145;
+}
+
+[data-theme="light"] {
+  --main-color: #eeeeee;
+  --seconde-color: #909396;
+  --text-color: #000;
+  --btn-main-color: #414550;
+  --background-form: #eeeeee;
+}
+
+* {
+  color: var(--text-color) !important ;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: "Nerko One", cursive;
+}
+
+/* !Start Login & Register */
+.form-control {
+  background-color: var(--main-color);
+  border: 1px solid var(--seconde-color);
+}
+
+.form-control:focus {
+  background-color: var(--main-color);
+  border-color: var(--text-color);
+  box-shadow: 0 0 8px 0 #ffffff45;
+}
+::placeholder {
+  color: var(--text-color) !important;
+  font-size: 0.9375rem;
+}
+.pass {
+  position: absolute;
+  right: 15px;
+  top: 7px;
+  cursor: pointer;
+}
+.image-login,
+.image-register {
+  background-image: url("../images/login.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.image-register {
+  background-image: url("../images/register.jpg");
+}
+.col-lg-7 {
+  background-color: var(--background-form);
+}
+.main-btn {
+  background-color: var(--btn-main-color);
+}
+.main-btn:hover {
+  background-color: #323539;
+}
+a,
+a i {
+  color: #6c757d !important;
+  transition: 0.3s;
+  font-size: 0.8125rem;
+}
+a:hover {
+  color: #565e64 !important;
+}
+ul {
+  list-style-position: inside;
+}
+
+/*! Start Navbar */
+.navbar {
+  background-color: var(--main-color) !important;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+}
+.nav-link:hover {
+  color: #09c !important;
+}
+.active {
+  color: #09c !important;
+}
+.nav-item .logout {
+  border: 2px solid #09c;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.nav-item .logout:hover {
+  background-color: #09c;
+  color: #fff !important;
+}
+
+/*! Start Home */
+.badge-color {
+  background-color: var(--seconde-color);
+}
+.card {
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+/*! Deatailes */
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--text-color);
+  padding-right: 5px;
+}
+.home {
+  color: var(--text-color) !important;
+}
+.details {
+  background-color: #272729be;
+  backdrop-filter: blur(4px);
+}
+/*! loading */
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
